@@ -82,6 +82,26 @@ class List {
     }
 
 
+    inesertTo(index,value){
+
+        if(this.size === 0 || index === this.size -1){
+            this.addEnd(value);
+            return;
+        }
+        if (index === 0){
+            this.addFront(value);
+            return;
+        }
+    }
+
+
+
+
+
+
+
+
+
     [Symbol.iterator]() {
         let current = this.head;
 
